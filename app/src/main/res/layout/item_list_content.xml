@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bg_weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".65"
+            android:contentDescription="@string/weather_background_description"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bg_weather"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="?attr/textAppearanceListItem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_temp_max"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:gravity="end"
+            android:textColor="@color/colorWhite"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_weather"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date"
+            app:layout_constraintVertical_bias="0.644" />
+
+        <TextView
+            android:id="@+id/tv_temp_min"
+            android:layout_width="47dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="52dp"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_weather"
+            app:layout_constraintStart_toEndOf="@+id/vw_separator"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date"
+            app:layout_constraintVertical_bias="0.742" />
+
+        <View
+            android:id="@+id/vw_separator"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="12dp"
+            android:background="@color/colorDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_temp_max"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.896" />
+
+        <ImageView
+            android:id="@+id/iv_weather_icon"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/weather_icon_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bg_weather"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_temp_min"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time"
+            app:layout_constraintVertical_bias="0.845" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

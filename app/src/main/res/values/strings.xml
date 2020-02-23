@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherDemoApp-Android</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="weather_background_description">Weather background for Paris</string>
+    <string name="weather_icon_description">Weather status</string>
+    <string name="forecast_detail_wind_label">Wind</string>
+    <string name="forecast_detail_cloud_label">Cloudiness</string>
+    <string name="forecast_detail_temp_label">Temperature</string>
+    <string name="forecast_detail_pressure_label">Pressure</string>
+    <string name="forecast_detail_humidity_label">Humidity</string>
+    <string name="temperature_feels_like_label">Feels like %s</string>
+    <string name="forecast_detail_temp_hot_label">It is HOT!</string>
+    <string name="forecast_detail_temp_cold_label">It is COLD!</string>
+    <string name="leave_application_message">Do you really want to leave this app?</string>
+    <string name="user_approval_message">YES</string>
+    <string name="send_sms_phone_number">smsto:%s</string>
+    <string name="send_sms_body">Credits: find plenty of amazing icons in https://icons8.com</string>
+</resources>
